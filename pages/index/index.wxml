@@ -1,0 +1,44 @@
+<scroll-view scroll-y="true" style="height: 750px; background-color: white" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <loading hidden = "{{hide}}">加载中...</loading>
+    <view class = "body-view" >
+    <block wx:for="{{datas}}" wx:key="item" >
+        <view wx:if="{{item.imgextra}}" >
+            <navigator url="../newsDetail/index?id={{item.postid}}">       
+                <view class="title-three-pic">
+                    <text> {{item.title}} </text>
+                </view>
+                <view style="margin-top:10px;">
+                    <image class="three-pic" src = "{{item.imgsrc}}" ></image>
+                    <image class="three-pic" style = "margin-left:7px;"  src = "{{item.imgextra[0].imgsrc}}" ></image>
+                    <image class="three-pic" style = "margin-left:7px;"  src = "{{item.imgextra[1].imgsrc}}" ></image>
+                </view>
+                <view>
+                    <text class="subtitle" style="">{{item.source}}</text>
+                    <text class="subtitle" style="float:right;margin:3px 5px;">浏览次数: {{item.votecount}}</text>
+                </view>
+                <view class="line"></view>
+            </navigator>
+        </view>
+
+        <view wx:else >
+            <navigator url="../newsDetail/index?id={{item.postid}}"> 
+                 <view>
+                    <view style="margin-top:10px;">
+                        <image class="one-pic" src = "{{item.imgsrc}}" ></image>
+                        <text class="title-one-pic right"> {{item.title}} </text>
+                    </view>
+                </view>
+
+                <view>
+                    <text class="subtitle" style="">{{item.source}}</text>
+                    <text class="subtitle" style="float:right;margin:3px 5px;">浏览次数: {{item.votecount}}</text>
+                </view>
+                <view class="line"></view>
+            </navigator>
+        </view>    
+    </block>
+
+</view>
+
+
+  </scroll-view>

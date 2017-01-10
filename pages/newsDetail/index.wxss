@@ -1,0 +1,23 @@
+
+
+.detail-container{
+	margin: 10px 20px;
+    line-height: 20px;
+    /*background:yellow;*/
+}
+
+.title {
+
+    height: 20px;
+    font-size: 18px;
+}
+
+.source {
+	font-size: 15px;
+	color: darkgray;
+}
+
+.content {
+	font-size: 14px;
+	color: darkgray;
+}

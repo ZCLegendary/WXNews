@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true" style="height: 750px; background-color: white" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <loading hidden = "{{hide}}">加载中...</loading>
+    <view class = "body-view" >
+    <block wx:for="{{datas}}" wx:key="item" >
+    <navigator url="../videoDetail/index?id={{item.mp4_url}}">  
+      <view style="margin-top: 10px">
+          <view class="img-container">
+            <image class="image" src = "{{item.cover}}" ></image>
+            <view class="img-play-container">
+              <image class="img-play" src = "../../images/play.png"></image>
+            </view>
+            <view class="title-container">
+              <text class="title">{{item.title}}</text>
+            </view>
+            <view class="line"></view>
+          </view>
+      </view>
+    </navigator>
+    </block>
+
+</view>
+
+
+</scroll-view>

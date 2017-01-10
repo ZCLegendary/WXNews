@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+     "pages/videoPage/index",
+     "pages/newsDetail/index",
+     "pages/videoDetail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "要闻",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+
+"list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/homePage.png",
+      "selectedIconPath": "images/homePageSelected.png",
+      "text": "要闻"
+    }, {
+      "pagePath": "pages/videoPage/index",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/mySelected.png",
+      "text": "视频"
+    }]
+
+  }
+
+
+}
