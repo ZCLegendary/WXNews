@@ -1,2 +1,2 @@
 
-![image](https://github.com/ZCLegendary/raw/master/WXNews/show.gif)
+![image](https://github.com/ZCLegendary/WXNews/raw/master/show.gif)
